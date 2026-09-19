@@ -270,7 +270,25 @@
 
 </section>
 
+<div class="social-chat">
 
+    <button class="chat-button" onclick="toggleSocial()">
+        💬
+    </button>
+
+    <div class="social-menu" id="socialMenu">
+
+        <a href="https://t.me/dennchik_07" target="_blank">
+            TikTok
+        </a>
+
+       <a href="https://www.tiktok.com/@dennchik_07" target="_blank"></a>
+            Telegram
+        </a>
+
+    </div>
+
+</div>
 <footer>
     <div>NOVA<span>●</span></div>
     <small>Built with Python · Flask</small>
@@ -362,7 +380,11 @@ function showMessage(type) {
     }
 
 }
+function toggleSocial() {
+    const menu = document.getElementById("socialMenu");
 
+    menu.classList.toggle("active");
+}
 </script>
 
 </body>
